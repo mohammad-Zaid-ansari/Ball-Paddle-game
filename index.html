@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball and Paddle Game</title>
+    <style>
+        * {
+            margin: 0em;
+            padding: 0em;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .score-life {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .update {
+            margin: 0 1em;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        #ctx {
+            background-color: rgba(14, 14, 13, 0.719);
+        }
+
+        .overlay {
+            width: 800px;
+            height: 600px;
+            background-color: rgba(22, 20, 20, 0.664);
+            /* z-index: 111; */
+            position: absolute;
+            top: 38px;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 600px;
+            color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="score-life">
+
+        <div class="update score">Score: <span>0</span> </div>
+        <div class="update life">Life: <span>3</span></div>
+    </div>
+    <canvas id="ctx" width="800px" height="600px" style="border: 1px solid;">
+
+    </canvas>
+    <div id="overlay"></div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
